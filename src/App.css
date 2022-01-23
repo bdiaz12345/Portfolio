@@ -1,38 +1,142 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  animation: Fade-in .5s linear;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(to right, aliceblue, dodgerblue);
+  height: 70vh;
+}
+
+.App-logo {
+  border-radius: 50%;
+  width: 20rem;
+  margin-top: 3rem;
+}
+
+.img-logo-github {
+  width: 3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.img-logo-linkedin {
+  width: 3rem;
+  margin-left: 1rem;
+  border-radius: 20%;
+}
+
+.resume-button {
+  padding: 1rem;
+  border-radius: .375rem;
+  color: white;
+  background: dodgerblue;
+  width: 10rem;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: .25s ease-in-out;
+  position: absolute;
+  top: 60vh;
+}
+
+.resume-button:hover {
+  color: black;
+  cursor: pointer;
+  background: gold;
+}
+
+.app-body {
+  background: azure;
+  border-top: 2px solid gold;
+}
+
+.projects {
   display: flex;
   flex-direction: column;
+}
+
+.project {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2rem 0;
+  align-self: center;
+  width: 90vw;
 }
 
-.App-link {
-  color: #61dafb;
+.project-title {
+  margin-left: 5rem;
 }
 
-@keyframes App-logo-spin {
+.project-description {
+  margin-left: 5rem;
+}
+
+.project-img {
+  width: 40rem;
+  transition: .25s ease-in-out;
+}
+
+.project-img:hover {
+  cursor: pointer;
+  border: 1px solid gold;
+  transform: scale(1.1);
+}
+
+@keyframes Fade-in {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .App-logo {
+    width: 10rem;
+  }
+  .App-header {
+    height: 45vh;
+  }
+  .project-img {
+    width: 20rem;
+  }
+  .resume-button {
+    top: 35vh;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-title {
+    margin: 2rem 0;
+  }
+  .project-description {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .App-header {
+    height: 60vh;
+  }
+  .resume-button {
+    top: 45vh;
+  }
+  .img-logo-github {
+    margin-top: 1rem;
+  }
+  .img-logo-linkedin {
+    margin-top: 1rem;
+  }
+  .project {
+    border-bottom: 1px solid dodgerblue;
   }
 }
