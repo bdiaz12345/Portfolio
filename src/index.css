@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: linear-gradient(to right, aliceblue, dodgerblue);
   font-family: sans-serif;
   background-color: aliceblue;
   -webkit-font-smoothing: antialiased;

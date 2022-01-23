@@ -7,7 +7,7 @@
 
 .App-header {
   background: linear-gradient(to right, aliceblue, dodgerblue);
-  height: 70vh;
+  height: 55vh;
 }
 
 .App-logo {
@@ -31,6 +31,7 @@
 
 .resume-button {
   padding: 1rem;
+  margin-bottom: 2rem;
   border-radius: .375rem;
   color: white;
   background: dodgerblue;
@@ -40,8 +41,6 @@
   justify-content: center;
   font-size: 1rem;
   transition: .25s ease-in-out;
-  position: absolute;
-  top: 60vh;
 }
 
 .resume-button:hover {
@@ -101,7 +100,7 @@
     width: 10rem;
   }
   .App-header {
-    height: 45vh;
+    height: 40vh;
   }
   .project-img {
     width: 20rem;
@@ -125,7 +124,7 @@
     font-size: 1.5rem;
   }
   .App-header {
-    height: 60vh;
+    height: 43vh;
   }
   .resume-button {
     top: 45vh;
