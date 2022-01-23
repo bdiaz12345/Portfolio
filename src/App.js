@@ -13,6 +13,7 @@ function App() {
     window.open(
       myResume, '_blank'
     )
+  
   }
 
   return (
