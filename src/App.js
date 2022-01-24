@@ -22,16 +22,18 @@ function App() {
         <img src={bryan} className="App-logo" alt="Bryan Diaz" />
         <h1 style={{color: 'white'}}>Bryan Diaz - Software Developer</h1>
         <h4>"Code. Coffee. Music."</h4>
-        <a href="https://github.com/bdiaz12345" target="_blank">
-          <img className="img-logo-github" src={github} />
-        </a>
-        <a href="https://github.com/bdiaz12345" target="_blank">
-          <img className="img-logo-linkedin" src={linkedin} />
-        </a>
+        <div>
+          <a href="https://github.com/bdiaz12345" target="_blank">
+            <img className="img-logo-github" src={github} />
+          </a>
+          <a href="https://github.com/bdiaz12345" target="_blank">
+            <img className="img-logo-linkedin" src={linkedin} />
+          </a>
+        </div>
+        <button onClick={viewResume} className="resume-button">
+          View Resumè
+        </button>
       </header>
-      <button onClick={viewResume} className="resume-button">
-        View Resumè
-      </button>
       <div className="app-body">
         {/* <p>Hi there! I'm Bryan, and I build software for a living. Although in my free time I produce music and play basketball.</p> */}
         <div className="projects">
