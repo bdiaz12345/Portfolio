@@ -67,11 +67,13 @@
 }
 
 .project-title {
-  margin-left: 5rem;
+  position: absolute;
+  left: 45vw;
 }
 
 .project-description {
-  margin-left: 5rem;
+  position: absolute;
+  left: 60vw;
 }
 
 .project-img {

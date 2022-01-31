@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import bryan from './Me.jpeg';
 import wedge from './wedge.png';
 import reciplease from './reciplease.png';
-import amazon from './amazon.png';
 import github from './github-logo.png';
 import linkedin from './linkedin-logo.png';
 import myResume from './resume.pdf'
+import cryptoSim from './cryptosim.png'
 import './App.css';
 
 function App() {
@@ -47,18 +47,18 @@ function App() {
             <p className="project-description">A website that matches you with the best cocktails based on the ingredients you select.</p>
           </div>
           <div className="project">
+            <a href="https://crypto-sim.surge.sh/" target="_blank">
+              <img src={cryptoSim} className="project-img" />
+            </a>
+            <h2 className="project-title">Crypto Sim</h2>
+            <p className="project-description">A crypto-data-driven application that allows you to trade real crypto currency with fake money.</p>
+          </div>
+          <div className="project">
             <a href="https://reciplease-app.vercel.app/" target="_blank">
               <img src={reciplease} className="project-img" />
             </a>
             <h2 className="project-title">Reciplease</h2>
             <p className="project-description">All of your cookbook and recipe discovery needs conveniently placed into one website.</p>
-          </div>
-          <div className="project">
-            <a href="http://amazon-clone-web-application.herokuapp.com/" target="_blank">
-              <img src={amazon} className="project-img" />
-            </a>
-            <h2 className="project-title">Amazon Clone</h2>
-            <p className="project-description">Not even Ebay can compete with Amazon Clone. The only thing better is Amazon itself.</p>
           </div>
         </div>
         <div className="app-body-bottom">
