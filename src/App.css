@@ -63,17 +63,15 @@
   align-items: center;
   margin: 2rem 0;
   align-self: center;
-  width: 90vw;
+  width: 90%;
 }
 
 .project-title {
-  position: relative;
-  left: 7vw;
+  margin-left: 7vw;
 }
 
 .project-description {
-  position: relative;
-  left: 10vw;
+  margin-left: 3vw;
 }
 
 .project-img {
@@ -96,7 +94,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .App-logo {
     width: 10rem;
   }
@@ -111,6 +109,7 @@
   }
   .project {
     flex-direction: column;
+    border-bottom: 1px solid dodgerblue
   }
   .project-title {
     margin: 2rem 0;
